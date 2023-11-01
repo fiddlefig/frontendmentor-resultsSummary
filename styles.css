@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'hackengrotesk';
-    src: url(/assets/fonts/hackengrotesk.ttf);
+    src: url(./assets/fonts/hackengrotesk.ttf);
 }
 /*HEADER THINGS */
 body {
