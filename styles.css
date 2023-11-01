@@ -1,0 +1,163 @@
+.attribution { 
+    font-size: 11px; text-align: center;
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@font-face {
+    font-family: 'hackengrotesk';
+    src: url(/assets/fonts/hackengrotesk.ttf);
+}
+/*HEADER THINGS */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "hackengrotesk";
+    background-color: antiquewhite;
+    
+}
+.container {
+    display: flex;
+    width: 600px;
+    justify-content: right;
+    box-shadow: 1px 0px 20px 2px rgb(0,0,0, 0.4%);
+    border-radius: 20px;
+
+}
+.left{
+    color: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%)) ;
+    text-align: center;
+}
+.right {
+    width: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: linear-gradient(hsl(0, 0%, 100%), hsl(5, 0%, 99%));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.left h4 {
+    text-align: center;
+}
+.score-left {
+    padding:50px;
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    /*box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);*/
+    background:linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.big-score {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.score-con {
+    display: flex;
+}
+.grey {
+    color: rgba(87, 87, 78, 0.992);
+}
+.score-con img {
+    margin-right: 5px;
+}
+.black-text {
+    color: #222;
+    font-weight: bold;
+}
+.score-reaction {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.score-memory {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.score-verbal {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.score-visual {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+button {
+    margin-top: 10px;
+    padding: 15px 10px;
+    border: none;
+    color: white;
+    outline: none;
+    background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'hackengrotesk';
+    font-weight: bold;
+    width: 250px;
+    margin-left: 60px;
+    
+}
+h4 {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.scores {
+    width: 80%;
+    padding-left: 35px;
+}
+.small-score {
+    color: rgba(200, 200, 200, .5) ;
+    font-weight: bold;
+}
+
+
+@media (max-width:760px) {
+    .left {
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-right-radius: 20px;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+}
